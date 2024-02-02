@@ -1,0 +1,25 @@
+{
+  "name": "botanical-garden-html-css-js-bootstrap",
+  "version": "1.0.0",
+  "description": "This repository contains a web development project called 'Botanical Website'.",
+  "repository": "https://github.com/M-oliveda/Web-BotanicalWebsite.git",
+  "author": "Mauricio Oliveda <maurioliveda@gmail.com>",
+  "license": "Apache-2.0",
+  "private": true,
+  "scripts": {
+    "test:cli": "echo 'Hello world!'",
+    "format": "prettier 'web/src/**' --write",
+    "format:check": "prettier --check 'web/src/**'",
+    "parcel:dev": "parcel './web/src/index.html' --dist-dir './web/dist' --no-source-maps",
+    "parcel:build": "parcel build './web/src/index.html' --dist-dir './web/public' --no-source-maps"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.11.0",
+    "parcel": "^2.11.0",
+    "prettier": "^3.2.4"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.2"
+  }
+}
