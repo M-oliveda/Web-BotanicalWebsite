@@ -14,7 +14,9 @@
     "parcel:build": "parcel build './web/src/index.html' --dist-dir './web/public' --no-source-maps"
   },
   "devDependencies": {
+    "@parcel/packager-raw-url": "2.11.0",
     "@parcel/transformer-sass": "2.11.0",
+    "@parcel/transformer-webmanifest": "2.11.0",
     "parcel": "^2.11.0",
     "prettier": "^3.2.4"
   },
