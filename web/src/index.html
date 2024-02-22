@@ -17,6 +17,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./scss/styles.scss" />
     <script src="./js/main.js" type="module"></script>
     <title>Web Development Project - Botanical Garden</title>
@@ -79,5 +83,37 @@
         </div>
       </nav>
     </header>
+    <section class="hero-section">
+      <div class="hero-content">
+        <h1>A beatiful adventure awaits</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt
+          facilisis nunc
+        </p>
+        <div
+          class="d-flex flex-column gap-2 align-items-center flex-md-row align-items-md-start"
+        >
+          <button type="button" class="btn primary-btn">Buy Tickets</button>
+          <a href="#" class="btn secondary-btn">Learn More</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <picture>
+          <source
+            srcset="./assets/img/hero-image-md.png"
+            media="(min-width: 768px) and (max-width: 1200px)"
+          />
+          <source
+            srcset="./assets/img/hero-image-xl.png"
+            media="(min-width: 1200px)"
+          />
+          <img
+            src="./assets/img/hero-image-sm.png"
+            alt="Website hero image, showing a house."
+            class="d-block mx-auto"
+          />
+        </picture>
+      </div>
+    </section>
   </body>
 </html>
