@@ -1,0 +1,44 @@
+.btn {
+  padding: 15px 30px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+
+  @media (min-width: map-get($grid-breakpoints,"md")) {
+    & {
+      padding: 20px 40px;
+    }
+  }
+}
+
+.primary-btn {
+  border: none;
+  border-radius: 0;
+  background-color: $primary;
+  color: #fff;
+
+  transition: background-color 500ms ease-in;
+
+  &:hover {
+    color: #fff;
+    background-color: #547552;
+  }
+}
+
+.secondary-btn {
+  border: 1px solid $primary;
+  border-radius: 0;
+  color: $primary;
+  border-color: $primary;
+
+  transition:
+    background-color 500ms ease-in,
+    color 500ms ease-in;
+
+  &:hover {
+    color: #fff;
+    background-color: $primary;
+  }
+}
