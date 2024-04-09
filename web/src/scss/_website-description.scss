@@ -1,0 +1,87 @@
+section.website-description {
+  padding: 56px 10px;
+
+  background-image: url("../assets/img/bg-image.svg");
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-color: $header-color;
+
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 40px;
+  align-items: center;
+
+  @media (min-width: map-get($grid-breakpoints,"md")) {
+    & {
+      padding: 56px 120px;
+
+      align-items: flex-start;
+    }
+  }
+
+  @media (min-width: map-get($grid-breakpoints,"xl")) {
+    & {
+      padding: 100px 60px;
+
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    picture:nth-child(2) {
+      order: 1;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.5em;
+    align-items: center;
+
+    @media (min-width: map-get($grid-breakpoints,"md")) {
+      & {
+        align-items: flex-start;
+      }
+    }
+
+    .secondary-btn {
+      width: 200px;
+
+      color: $white;
+      border-color: $white;
+
+      font-size: 14px;
+    }
+
+    h2 {
+      max-width: 450px;
+
+      font-size: 34px;
+      text-align: center;
+      text-transform: capitalize;
+
+      @media (min-width: map-get($grid-breakpoints,"md")) {
+        & {
+          font-size: 45px;
+          text-align: left;
+        }
+      }
+    }
+
+    p {
+      max-width: 400px;
+
+      text-align: center;
+      font-size: 16px;
+
+      @media (min-width: map-get($grid-breakpoints,"md")) {
+        & {
+          font-size: 20px;
+          text-align: left;
+        }
+      }
+    }
+  }
+}

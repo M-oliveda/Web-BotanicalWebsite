@@ -3,6 +3,7 @@
 
 // 2. Include any default variable overrides here
 $primary: #475f45;
+$header-color: #343d33;
 
 $font-family-base: "Roboto", sans-serif;
 $headings-font-family: "Libre Baskerville", serif;
@@ -35,3 +36,4 @@ $headings-font-family: "Libre Baskerville", serif;
 @import "./website-header";
 @import "./buttons";
 @import "./website-hero";
+@import "./website-description";
