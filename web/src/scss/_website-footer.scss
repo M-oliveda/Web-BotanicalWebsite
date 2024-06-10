@@ -1,0 +1,137 @@
+.website-footer {
+  padding-top: 32px;
+  background-color: #414840;
+
+  @media (min-width: map-get($grid-breakpoints,"md")) {
+    & {
+      padding-top: 24px;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 40px;
+    align-items: center;
+
+    @media (min-width: map-get($grid-breakpoints,"md")) {
+      & {
+        flex-flow: row nowrap;
+        gap: 0;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+    }
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 150%;
+    color: white;
+    font-weight: 400;
+  }
+
+  h3 {
+    font-size: 23px;
+    line-height: 110%;
+    color: white;
+    font-weight: 400;
+  }
+
+  section.logo {
+    h3 {
+      width: 225px;
+      margin: 0 auto 32px auto;
+
+      @media (min-width: map-get($grid-breakpoints,"md")) {
+        & {
+          margin: 0;
+          margin-bottom: 24px;
+        }
+      }
+    }
+
+    p {
+      max-width: 270px;
+      font-weight: 200;
+      text-align: center;
+
+      @media (min-width: map-get($grid-breakpoints,"md")) {
+        & {
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  section.sitemap,
+  section.socials {
+    h3 {
+      margin: 0 auto 16px auto;
+      text-align: center;
+
+      @media (min-width: map-get($grid-breakpoints,"md")) {
+        & {
+          margin-bottom: 20px;
+          text-align: left;
+        }
+      }
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      flex-flow: column nowrap;
+      gap: 8px;
+      align-items: center;
+
+      @media (min-width: map-get($grid-breakpoints,"md")) {
+        & {
+          align-items: flex-start;
+        }
+      }
+
+      a {
+        font-weight: 200;
+        font-size: 12px;
+        line-height: 150%;
+        color: white;
+
+        text-decoration: none;
+
+        @media (min-width: map-get($grid-breakpoints,"md")) {
+          & {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  section.socials {
+    ul {
+      flex-flow: row nowrap;
+      gap: 32px;
+
+      @media (min-width: map-get($grid-breakpoints,"md")) {
+        & {
+          gap: 16px;
+        }
+      }
+    }
+  }
+
+  .legal-content {
+    padding: 29px 55px;
+    background-color: $header-color;
+    text-align: center;
+
+    small {
+      font-size: 12px;
+      line-height: 150%;
+      font-weight: 300;
+    }
+  }
+}
