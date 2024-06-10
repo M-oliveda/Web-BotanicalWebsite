@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/img/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="./assets/img/icon.svg" type="image/svg+xml" />
+    <link
+      rel="apple-touch-icon"
+      href="./assets/img/apple-touch-icon.png"
+      sizes="180x180"
+    />
+    <link rel="manifest" href="./assets/img/manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./scss/styles.scss" />
+    <script src="./js/main.js" type="module"></script>
+    <title>Web Development Project - Botanical Garden</title>
+  </head>
+  <body>
+    <header class="mb-5 mb-xl-0">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a href="/" class="navbar-brand">
+            <img
+              src="./assets/img/botanical-garden-logo.svg"
+              alt="Botanical Garden Logo."
+              style="max-width: 280px"
+            />
+          </a>
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavigationContainer"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavigationContainer"
+          >
+            <ul
+              class="navbar-nav gap-3 align-items-center align-items-lg-baseline py-4 py-lg-0"
+            >
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" href="#">Visit</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" href="#">Exhibitions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" href="#"
+                  >Programns & Events</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" href="#">Store</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="btn secondary-btn"> Learn More </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="hero-section">
+      <div class="hero-content">
+        <h1>A beatiful adventure awaits</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt
+          facilisis nunc
+        </p>
+        <div
+          class="d-flex flex-column gap-2 align-items-center flex-md-row align-items-md-start"
+        >
+          <button type="button" class="btn primary-btn">Buy Tickets</button>
+          <a href="#" class="btn secondary-btn">Learn More</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <picture>
+          <source
+            srcset="./assets/img/hero-image-md.png"
+            media="(min-width: 768px) and (max-width: 1200px)"
+          />
+          <source
+            srcset="./assets/img/hero-image-xl.png"
+            media="(min-width: 1200px)"
+          />
+          <img
+            src="./assets/img/hero-image-sm.png"
+            alt="Website hero image, showing a house."
+            class="d-block mx-auto"
+          />
+        </picture>
+      </div>
+    </section>
+    <section class="website-description">
+      <picture>
+        <source
+          srcset="./assets/img/image-md-1.png"
+          media="(min-width: 768px) and (max-width: 1200px)"
+        />
+        <source
+          srcset="./assets/img/image-xl-1.png"
+          media="(min-width: 1200px)"
+        />
+        <img src="./assets/img/image-sm-1.png" alt="Two plans, in a garden." />
+      </picture>
+      <picture>
+        <source
+          srcset="./assets/img/image-md-2.png"
+          media="(min-width: 768px) and (max-width: 1200px)"
+        />
+        <source
+          srcset="./assets/img/image-xl-2.png"
+          media="(min-width: 1200px)"
+        />
+        <img
+          src="./assets/img/image-sm-2.png"
+          alt="Two chairs, in a garden or patio."
+        />
+      </picture>
+      <div class="content">
+        <h2 class="text-white">Discover yourself with nature</h2>
+        <p class="text-white fw-light">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt
+          facilisis nuncLorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Tincidunt facilisis nunc
+        </p>
+        <a href="#" class="btn secondary-btn">Learn More</a>
+      </div>
+    </section>
+    <section class="website-posts">
+      <div class="container">
+        <header>
+          <h2>News & Updates</h2>
+          <a href="#" class="btn tertiary-btn">
+            <span class="btn__content"> View All Posts </span>
+            <span class="btn__right-icon"></span>
+          </a>
+        </header>
+        <div class="posts">
+          <article class="feature-post">
+            <picture>
+              <source
+                srcset="./assets/img/feature-post-md.png"
+                media="(min-width: 768px) and (max-width: 1200px)"
+              />
+              <source
+                srcset="./assets/img/feature-post-xl.png"
+                media="(min-width: 1200px)"
+              />
+              <img
+                src="./assets/img/feature-post-sm.png"
+                alt="A garden with a lot of green plants."
+                class="image"
+              />
+            </picture>
+            <div class="content">
+              <h3><a href="#">Plants Around Us</a></h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Tincidunt facilisis nuncLorem ipsum dolor sit.Lorem ipsum dolor
+                sit amet, consectetur adipiscing elit...
+              </p>
+              <p class="publication-date">
+                <time datetime="2021-12-23">December 23, 2021</time>
+              </p>
+            </div>
+          </article>
+          <div class="older-posts">
+            <article class="post">
+              <img
+                src="./assets/img/first-post.png"
+                alt="First Image Post"
+                class="image"
+              />
+              <div class="content">
+                <h3><a href="#">Post Title</a></h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Tincidunt facilisis nuncLorem ipsum dolor sit.
+                </p>
+                <p class="publication-date">
+                  <time datetime="2021-12-19">December 19, 2021</time>
+                </p>
+              </div>
+            </article>
+            <hr />
+            <article class="post">
+              <img
+                src="./assets/img/second-post.png"
+                alt="First Image Post"
+                class="image"
+              />
+              <div class="content">
+                <h3><a href="#">Post Title</a></h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Tincidunt facilisis nuncLorem ipsum dolor sit.
+                </p>
+                <p class="publication-date">
+                  <time datetime="2021-12-10">December 10, 2021</time>
+                </p>
+              </div>
+            </article>
+            <hr />
+            <article class="post">
+              <img
+                src="./assets/img/third-post.jpg"
+                alt="First Image Post"
+                class="image"
+              />
+              <div class="content">
+                <h3><a href="#">Post Title</a></h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Tincidunt facilisis nuncLorem ipsum dolor sit.
+                </p>
+                <p class="publication-date">
+                  <time datetime="2021-11-19">November 19, 2021</time>
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="website-footer">
+      <div class="container pb-5 pt-xl-3 pb-xl-5">
+        <div class="content">
+          <section class="logo">
+            <h3>
+              <a href="#"
+                ><img
+                  src="./assets/img/botanical-garden-logo_light.svg"
+                  alt="Website Logo"
+              /></a>
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt
+              facilisis nuncLorem ipsum dolor sit amet, consectetur adipiscing.
+            </p>
+          </section>
+          <section class="sitemap">
+            <h3>Sitemap</h3>
+            <ul>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">Visit</a></li>
+              <li><a href="#">Exhibitions</a></li>
+              <li><a href="#">Programs & Events</a></li>
+              <li><a href="#">Store</a></li>
+              <li><a href="#">Membership</a></li>
+            </ul>
+          </section>
+          <section class="socials">
+            <h3>Connect</h3>
+            <ul>
+              <li>
+                <a href="#"
+                  ><img src="./assets/img/twitter.svg" alt="X Social Icon."
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="./assets/img/facebook.svg"
+                    alt="Facebook Social Icon."
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="./assets/img/linkedin.svg"
+                    alt="Linkedin Social Icon."
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="./assets/img/mail.svg" alt="Mail Icon."
+                /></a>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+      <div class="legal-content">
+        <p><small>© 2021 Mist Gardens. All rights reserved.</small></p>
+      </div>
+    </footer>
+  </body>
+</html>

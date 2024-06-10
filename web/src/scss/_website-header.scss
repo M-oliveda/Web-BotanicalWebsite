@@ -1,0 +1,51 @@
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-nav {
+  padding: 40px 0 !important;
+  border-radius: 1rem;
+  margin: 1rem 0;
+
+  background-color: $primary;
+
+  @media (min-width: map-get($grid-breakpoints,"xl")) {
+    & {
+      padding: 0 !important;
+      border: none;
+      border-radius: 0;
+      margin: 0;
+      background-color: $white;
+    }
+  }
+
+  .nav-link {
+    color: $white;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+    transition: color ease-in 400ms;
+
+    &:hover {
+      color: lighten($color: $primary, $amount: 20);
+    }
+
+    @media (min-width: map-get($grid-breakpoints,"xl")) {
+      & {
+        color: $primary;
+      }
+    }
+  }
+
+  .secondary-btn {
+    color: $white;
+    border-color: $white;
+
+    @media (min-width: map-get($grid-breakpoints,"xl")) {
+      & {
+        color: $primary;
+        border-color: $primary;
+      }
+    }
+  }
+}
