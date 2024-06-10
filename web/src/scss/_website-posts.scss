@@ -1,0 +1,49 @@
+.website-posts {
+  padding: 32px 0;
+
+  background: url("../assets/img/bg-imageposts.svg");
+  background-size: 37vw;
+  background-position: right -30vh;
+  background-repeat: no-repeat;
+
+  @media (min-width: map-get($grid-breakpoints,"md")) {
+    & {
+      padding: 53px 36px;
+    }
+  }
+
+  @media (min-width: map-get($grid-breakpoints,"xl")) {
+    & {
+      padding: 65px 0;
+    }
+  }
+
+  header {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    @media (min-width: map-get($grid-breakpoints,"md")) {
+      & {
+        align-items: flex-start;
+      }
+    }
+  }
+
+  h2 {
+    margin-bottom: 32px;
+
+    font-size: 34px;
+    line-height: 110%;
+    font-weight: 400;
+    color: $header-color;
+
+    @media (min-width: map-get($grid-breakpoints,"md")) {
+      & {
+        margin-bottom: 16px;
+
+        font-size: 45px;
+      }
+    }
+  }
+}
